@@ -1,0 +1,3 @@
+"GET#/api/v1/ip-list": "ip#index"
+"POST#/api/v1/ip-save": "ip#create"
+"POST#/api/v1/ip-remove": "ip#delete"

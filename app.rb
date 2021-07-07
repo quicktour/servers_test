@@ -7,6 +7,10 @@ class App
 
   def call(env)
     response = router.resolve(env)
-    [200, {}, [response]]
+    [response.status, response.headers, [response.content]]
+  end
+
+  def self.root
+    File.dirname(__FILE__)
   end
 end
