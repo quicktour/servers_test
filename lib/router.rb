@@ -1,10 +1,8 @@
-ROUTES = YAML.load(File.read(File.join(File.dirname(__FILE__), "../config", "routes.yml")))
-
 class Router
   attr_reader :routes
 
   def initialize()
-    @routes ||= ROUTES
+    @routes ||= ConfigLoader.routes
   end
 
   def resolve(env)

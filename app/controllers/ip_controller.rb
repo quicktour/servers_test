@@ -1,5 +1,6 @@
 class IpController < BaseController
   def index
+    byebug
     content = { "message": "it list" }
     render content
   end

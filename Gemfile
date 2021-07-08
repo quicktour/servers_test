@@ -5,4 +5,6 @@ ruby '2.7.1'
 
 gem 'rack'
 gem 'puma'
+gem 'pg'
+gem 'sequel'
 gem 'byebug'

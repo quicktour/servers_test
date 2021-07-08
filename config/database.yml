@@ -1,0 +1,6 @@
+host: localhost
+port: 5434
+user: docker
+password: docker
+database: servers_development
+url: postgres://docker:docker@localhost:5434/servers_development
