@@ -2,6 +2,8 @@ paths = %w[/lib/*.rb
            /config/initializers/*.rb
            /app/controllers/base_controller.rb
            /app/controllers/*.rb
+           /app/models/*.rb
+           /app/services/**/*.rb
           ].map(&:freeze).freeze
 
 paths.each do |path|

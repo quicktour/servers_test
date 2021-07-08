@@ -1,17 +1,16 @@
 class IpController < BaseController
   def index
-    byebug
-    content = { "message": "it list" }
+    content = Ip::ListService.call
     render content
   end
 
   def create
-    content = { "message": "it create" }
+    content = Ip::CreateService.call(@params)
     render content
   end
 
   def delete
-    content = { "message": "it delete" }
+    content = Ip::DeleteService.call(@params)
     render content
   end
 end

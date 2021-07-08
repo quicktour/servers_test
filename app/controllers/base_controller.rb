@@ -1,10 +1,11 @@
 class BaseController
-  attr_reader :name, :action
+  attr_reader :name, :action, :params
   attr_accessor :status, :headers, :content
 
-  def initialize(name: nil, action: nil)
+  def initialize(name: nil, action: nil, params: nil)
     @name = name
     @action = action
+    @params = params
   end
 
   def call
